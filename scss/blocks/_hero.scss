@@ -1,0 +1,130 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.calc{
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgb(197, 197, 197);
+}
+.calc__window{
+    width: 100%;
+    height: 160px;
+    background-color: #38CF7B;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;   
+}
+.calc__answer{
+    font-size: 30px;
+}
+.calc__inner{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(5,87px);
+    // overflow: hidden;
+    
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+#ans{
+    grid-column: 4/5;
+    grid-row: 3 / 5;
+    border-radius: 30px;
+    background-color: #38CF7B;
+    width: 55px;
+    margin:  0 auto;
+    color: #fff;    
+
+}
+button{
+    background-color: #fff;
+    border: none;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        background-color: #C6E9FC;
+    }
+}
+#tag-x{
+    font-size: 40px;
+}
+#devide,
+#minus,
+#plus{
+    font-size: 18px;
+}
+#x{
+    font-weight: 900;
+    font-size: 30px;
+}
+#arrow{
+    position: absolute;
+    top: 90px;
+    left: -90px;
+    background-color: #E0E1E4;
+    height: 70px;
+    width: 90px;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+     i{
+         color: #fff;
+         position: relative;
+         left: -5px;
+         top: 2px;
+         font-size: 40px;
+     }
+}
+span{
+    position: absolute;
+    top: 83px;
+    left: -7.5px;
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+    background-color: #E0E1E4;
+    
+}
+#bs {
+    position: absolute;
+    top: 153px;
+    left: -7.5px;
+}
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75%;
+    background-color: #E0E1E4;
+    border-bottom-right-radius: 15px;
+    transform: translateX(98%);
+    transition: all 0.5s ease-in-out;
+}
+.translate{
+    transform: translateX(0);
+
+}
+.wrapper__box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(5,80px) ;
+    button{
+        background-color: #E0E1E4;
+        &:hover{
+            background-color: #38CF7B;
+        }
+    }
+    
+}
